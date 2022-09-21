@@ -1,4 +1,4 @@
-package com.pedrobacchini.springcloudstarterstreamkafka.listeners;
+package com.pedrobacchini.springcloudstarterstreamkafka.oldway;
 
 public class ListenedEvents {
 

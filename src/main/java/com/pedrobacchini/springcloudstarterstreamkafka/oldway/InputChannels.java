@@ -1,4 +1,4 @@
-package com.pedrobacchini.springcloudstarterstreamkafka.listeners;
+package com.pedrobacchini.springcloudstarterstreamkafka.oldway;
 
 import org.springframework.cloud.stream.annotation.Input;
 import org.springframework.messaging.SubscribableChannel;

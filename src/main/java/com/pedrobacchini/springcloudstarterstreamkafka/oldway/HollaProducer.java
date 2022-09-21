@@ -1,13 +1,11 @@
-package com.pedrobacchini.springcloudstarterstreamkafka.listeners;
+package com.pedrobacchini.springcloudstarterstreamkafka.oldway;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.cloud.stream.function.StreamBridge;
 import org.springframework.messaging.MessageHeaders;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Component;
 
-import javax.validation.Valid;
 import java.util.HashMap;
 import java.util.UUID;
 

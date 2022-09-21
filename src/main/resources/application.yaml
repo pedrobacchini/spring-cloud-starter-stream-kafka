@@ -1,6 +1,8 @@
 spring:
     main.banner-mode: off
     cloud.stream:
+        function:
+            definition: helloFunctional;helloOther
         kafka:
             binder:
                 brokers: localhost:9092
@@ -12,6 +14,8 @@ spring:
                             max.poll.records: 50
                             max.poll.interval.ms: 120000
         bindings:
+#            helloFunctional-in-0:
+#                group: "helloFunctional"
             hello:
                 group: hello-group
                 destination: hello-topic

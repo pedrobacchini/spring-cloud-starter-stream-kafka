@@ -1,12 +1,11 @@
-package com.pedrobacchini.springcloudstarterstreamkafka.listeners;
+package com.pedrobacchini.springcloudstarterstreamkafka.oldway;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.cloud.stream.annotation.StreamListener;
-import org.springframework.stereotype.Component;
 
 import javax.validation.Valid;
 
-@Component
+//@Component
 @RequiredArgsConstructor
 public class HelloListener {
 
