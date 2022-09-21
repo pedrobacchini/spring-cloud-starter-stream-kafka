@@ -1,0 +1,30 @@
+spring:
+    main.banner-mode: off
+    cloud.stream:
+        kafka:
+            binder:
+                brokers: localhost:9092
+            bindings:
+                hello:
+                    consumer:
+                        startOffset: latest
+                        configuration:
+                            max.poll.records: 50
+                            max.poll.interval.ms: 120000
+        bindings:
+            hello:
+                group: hello-group
+                destination: hello-topic
+                content-type: application/json
+                consumer:
+                    maxAttempts: 6
+                    concurrency: 1
+            holla:
+                group: holla-group
+                destination: holla-topic
+                content-type: application/json
+#Default
+#    startOffset: latest
+#    max.poll.interval.ms = 300000
+#    max.poll.records = 500
+
